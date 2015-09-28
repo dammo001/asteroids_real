@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <canvas width="578" height="200" id="game-canvas"></canvas>
+    <canvas width="900" height="490" id="game-canvas"></canvas>
 
     <script src="lib/asteroid.js"></script>
     <script src="lib/game.js"></script> 
@@ -20,11 +20,12 @@
     <script src="lib/util.js"></script>  
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      // canvasEl.height = window.innerHeight;
-      // canvasEl.width = window.innerWidth;
-      var a = new Asteroids.MovingObject({"position":[200,100], "velocity":[40,40], "radius":30, "color":"green"}); 
-      // window.setInterval(function(){a.draw(canvasEl); a.move();}.bind(a), 100);
-    
+      canvasEl.height = window.innerHeight;
+      canvasEl.width = window.innerWidth;
+      console.log(canvasEl.height);
+      console.log(canvasEl.width);
+      var newGame = new Asteroids.gameView(canvasEl)
+      newGame.start()
     </script>
   </body>
 </html>
