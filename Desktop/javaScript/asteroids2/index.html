@@ -19,8 +19,8 @@
     <script src="lib/bullet.js"></script> 
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      canvasEl.height = 795;
-      canvasEl.width = 795;
+      canvasEl.height = window.innerHeight;
+      canvasEl.width = window.innerWidth;
       var newGame = new Asteroids.gameView(canvasEl, canvasEl.height, canvasEl.width)
       newGame.start()
     </script>
