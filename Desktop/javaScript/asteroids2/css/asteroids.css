@@ -30,3 +30,9 @@ z-index: 0 ;
 .container { 
 	position: fixed; 
 }
+
+canvas {
+	border: 1px solid black;
+	position: relative; 
+	left: 50px; 
+}

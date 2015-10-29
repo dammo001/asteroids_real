@@ -28,7 +28,7 @@
         <button id="play-again">Play Again</button>
       </div>
 
-      <canvas width="795" height="795" id="game-canvas">
+      <canvas width="795" height="400" id="game-canvas">
 
 
 
@@ -47,8 +47,8 @@
     <script src="lib/tracker.js"></script>
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      canvasEl.height = window.innerHeight;
-      canvasEl.width = window.innerWidth;
+      canvasEl.height = window.innerHeight-200;
+      canvasEl.width = window.innerWidth-100;
       var newGame = new Asteroids.gameView(canvasEl, canvasEl.height, canvasEl.width)
       newGame.start()
     </script>
