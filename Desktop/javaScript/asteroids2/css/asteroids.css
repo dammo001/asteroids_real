@@ -7,3 +7,11 @@ padding: 0;
 body { 
 overflow:hidden; 
 }
+
+#game-over { 
+	display: none;
+	font-weight: 700;
+	text-align: center; 
+	z-index: 50;
+	color: black;
+}
