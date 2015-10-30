@@ -7,18 +7,6 @@
   </head>
   <body>
     <div class="container"> 
-         
-          <div id="lives"> Lives left: </div>
-      <div id="instructions"> 
-        <div>
-          move with <span class="key">arrows</span> or <span class="key"> wasd</span>
-        </div>
-        <div>
-          shoot with <span class="key">space</span>
-        </div>
-        <div id="score"></div>
-      </div> 
-
 
       <div id="game-over-overlay"> 
       </div>
@@ -30,14 +18,13 @@
 
       <canvas width="795" height="400" id="game-canvas">
 
-
-
       </canvas>
 
     </div>
-
+    <script src="vendor/jquery-2.1.1.js"></script>
     <script src="lib/util.js"></script> 
     <script src="lib/game.js"></script> 
+    <script src="lib/menuView.js"></script>
     <script src="lib/gameview.js"></script>
     <script src="lib/sprite.js"></script> 
     <script src="lib/movingObject.js"></script> 
@@ -50,7 +37,7 @@
       var canvasEl = document.getElementById("game-canvas");
       canvasEl.height = window.innerHeight-200;
       canvasEl.width = window.innerWidth-100;
-      var newGame = new Asteroids.gameView(canvasEl, canvasEl.height, canvasEl.width)
+      var newGame = new Asteroids.menuView(canvasEl, canvasEl.height, canvasEl.width)
       newGame.start()
     </script>
   </body>
