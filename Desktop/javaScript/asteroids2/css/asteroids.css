@@ -34,5 +34,6 @@ z-index: 0 ;
 canvas {
 	border: 1px solid black;
 	position: relative; 
-	left: 50px; 
+	left: 75px; 
+	height: 100%;
 }
