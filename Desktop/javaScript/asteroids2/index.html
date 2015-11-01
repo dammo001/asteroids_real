@@ -11,7 +11,10 @@
       <canvas width="795" height="400" id="game-canvas">
 
       </canvas>
-
+      <audio id="laser" src="./sounds/laser_small.wav" style="display: none;"></audio>
+      <audio id="enemy-death" src="./sounds/enemy_death.wav" style="display: none;"></audio>
+      <audio id="ship-death" src="./sounds/ship_death.wav" style="display: none;"></audio>
+      <audio id="bg-audio" src="./sounds/Androids.wav" style="display: none;"></audio>
     </div>
     <script src="vendor/jquery-2.1.1.js"></script>
     <script src="lib/util.js"></script> 
@@ -28,6 +31,7 @@
     <script src="lib/floater.js"></script>
     <script src="lib/tracker.js"></script>
     <script>
+
       var canvasEl = document.getElementById("game-canvas");
       canvasEl.height = window.innerHeight-200;
       canvasEl.width = window.innerWidth-100;
